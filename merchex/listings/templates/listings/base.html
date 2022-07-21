@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="{% static 'listings/styles.css' %}"/>
     </head>
     <body>
+        <nav>
+            <a href="{% url 'band-list' %}">Band</a>
+            <a href="{% url 'listing-list' %}">Listing</a>
+        </nav>
         {% block content %}{% endblock %}
     </body>
 </html>

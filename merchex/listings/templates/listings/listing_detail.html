@@ -1,0 +1,12 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+    <h2>{{ listing.title }}</h2>
+    <ul>
+        <li>Year : {{ listing.year }}</li>
+        <li>Type : {{ listing.type }}</li>
+        <li>band : {{ listing.band }}</a></li>
+    </ul>
+    <p style=" width:50%;">{{ listing.description }}</p>
+    
+{% endblock %}
