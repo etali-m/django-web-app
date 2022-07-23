@@ -1,12 +1,10 @@
 {% extends 'listings/base.html' %}
 
 {% block content %}
-    <h1>Contact us</h1>
-    <p>We'ere to help.</p>
-    <form action="" method="POST" >
+    <h1>Create a listing</h1>
+    <form action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-
         <input type="submit" value="Submit">
     </form>
-{% endblock %}                                  
+{% endblock %}
